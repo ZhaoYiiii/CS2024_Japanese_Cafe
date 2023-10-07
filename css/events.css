@@ -15,13 +15,6 @@
 
 }
 
-.navBtn {
-    width: 80px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 #eventbanner {
     background-image: url(../images/banner4.png);

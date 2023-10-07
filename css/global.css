@@ -45,11 +45,18 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+
 }
+
+
+
 
 #logo img {
     height: 150px;
     align-items: center;
+
+
 }
 
 #centerButtons {
@@ -74,12 +81,18 @@ a:active {
     /* background-color: #6a81d2; */
     background-color: white;
     padding: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: fit-content;
+    padding-left: 28px;
+    padding-right: 28px;
+
+
+    width: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     filter: drop-shadow(-3px 5px 0px #6678c2);
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 
 
 }
@@ -87,11 +100,68 @@ a:active {
 .navBtn:hover {
     filter: drop-shadow(-0px 0px 0px #6678c2);
     transform: translate(-3px, 3px);
-    background-color: white;
-    color: #6a81d2;
-    transition-duration: 0.5s;
+    background-color: #b8b3fb;
+    color: white;
+    transition-duration: 0.3s;
+
+    /* transition: white 0.25s; */
+
 
 }
+
+
+
+/* 
+
+
+.navBtn::before,
+.navBtn::after {
+
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+
+.navBtn::before {
+    top: 0;
+    left: 0;
+}
+
+
+.navBtn::after {
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.navBtn:hover::before,
+.navBtn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.navBtn:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    transition:
+        width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
+}
+
+.navBtn:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    transition:
+        border-color 0s ease-out 0.5s,
+        width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
+}
+ */
+
+
+
 
 @font-face {
     font-family: font_monday_feelings;
@@ -127,7 +197,9 @@ a:active {
 
 
 
-
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
 
@@ -143,15 +215,16 @@ a:active {
     filter: brightness(110%);
     z-index: 2;
 
+
+
 }
 
-.welcomehome {
-    padding: 0;
-    margin: 0;
-    background-image: url(../images/87c110f50349c3738a9ac0797246762f.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 30vh;
-    opacity: 1;
-    filter: brightness(100%);
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
