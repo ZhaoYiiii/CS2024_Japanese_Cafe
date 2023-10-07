@@ -1,0 +1,36 @@
+#logo {
+    padding-top: 38px;
+    padding-bottom: 1px;
+
+}
+
+#logo img {
+    width: 200px;
+    height: 210px;
+}
+
+#centerButtons {
+
+    width: 26%;
+
+}
+
+.navBtn {
+    width: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#eventbanner {
+    background-image: url(../images/banner4.png);
+    height: 340px;
+    /* width: 100vw; */
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}

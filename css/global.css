@@ -64,31 +64,32 @@ a:active {
 }
 
 .navBtn {
-    color: black;
+    color: #7788c9;
     font-size: 13px;
     font-family: font_monday_feelings;
-    /* border: 1px solid black; */
+    border: 1px solid #7788c9;
     border-radius: 20px;
     /* background-color: #b8b3fb; */
     /* background-color: #000000; */
-    background-color: #6a81d2;
+    /* background-color: #6a81d2; */
+    background-color: white;
     padding: 13px;
     padding-left: 30px;
     padding-right: 30px;
     width: fit-content;
 
-    filter: drop-shadow(-3px 5px 0px #000000);
-    transition-duration: 0.5s;
+    filter: drop-shadow(-3px 5px 0px #6678c2);
+    transition-duration: 0.2s;
 
 
 }
 
 .navBtn:hover {
-    filter: drop-shadow(-0px 0px 0px #000000);
+    filter: drop-shadow(-0px 0px 0px #6678c2);
     transform: translate(-3px, 3px);
     background-color: white;
     color: #6a81d2;
-    transition-duration: 0.9s;
+    transition-duration: 0.5s;
 
 }
 
