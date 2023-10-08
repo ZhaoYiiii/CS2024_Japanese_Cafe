@@ -81,11 +81,11 @@ a:active {
     /* background-color: #6a81d2; */
     background-color: white;
     padding: 13px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 
-    width: 70px;
+    width: 100px;
     align-items: center;
     display: flex;
     flex-direction: row;
