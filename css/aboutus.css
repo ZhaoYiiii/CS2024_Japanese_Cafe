@@ -1,0 +1,187 @@
+body {
+    background-color: white;
+}
+
+#logo {
+    padding-top: 38px;
+    padding-bottom: 1px;
+
+}
+
+#logo img {
+    width: 200px;
+    height: 210px;
+}
+
+#centerButtons {
+
+    width: 30%;
+
+}
+
+.navBtn {
+    width: 120px;
+    align-items: center;
+    /* padding: 0 30px; */
+}
+
+#aboutusbanner {
+    background-image: url(../images/banner4.png);
+    height: 340px;
+    /* width: 100vw; */
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+
+
+
+.aboutusbody {
+    background-image: url(../images/a207dd_3aa0fa903e8546fa869d0b89f25a6de7~mv2.gif);
+    background-size: cover;
+    background-position: top;
+    height: 60vh;
+    filter: contrast(110%);
+    opacity: 0.6;
+    position: relative;
+    z-index: -1;
+
+}
+
+.aboutustext {
+    background-color: aliceblue;
+    height: 34vh;
+    width: 50vw;
+    z-index: 2;
+    margin-top: -60px;
+    position: absolute;
+    margin-left: 25vw;
+
+    filter: drop-shadow(-5px 5px 5px #000000);
+    text-align: center;
+    padding-top: 30px;
+    font-family: font_monday_feelings;
+
+
+}
+
+.aboutuspara {
+    font-size: 13px;
+    padding: 0 60px 0 60px;
+    text-align: start;
+
+
+}
+
+.aboutustitle {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-size: 20px; */
+    padding-top: 30px;
+
+
+}
+
+.abouteverything p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 280px;
+
+}
+
+.aboutusstuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+
+.aboutusicons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.iconsandtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: font_monday_feelings;
+
+}
+
+.iconsandtext p {
+    font-size: 11px;
+    padding-top: 12px;
+}
+
+.iconsandtext img {
+    width: 60px;
+    height: 60px;
+}
+
+.cafefee {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-left: 25vw;
+
+    background-color: #6678c2;
+    /* background-color: #; */
+    position: relative;
+    text-align: start;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    font-size: 11px;
+
+    font-family: font_monday_feelings;
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+.caferules {
+
+    position: absolute;
+
+    /* top: 100vh; */
+    margin-top: -70px;
+
+
+
+    margin-left: 34vw;
+    z-index: 2;
+    opacity: 0.9;
+
+}
+
+.caferulescontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 40vw;
+    height: 55vh;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: font_monday_feelings;
+
+}

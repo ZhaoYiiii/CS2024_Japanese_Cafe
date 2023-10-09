@@ -120,6 +120,15 @@ h1 {
 
 }
 
+.photoborder .thumbtackimg2 {
+    width: 50px;
+    margin-top: -40px;
+    margin-left: 1200px;
+
+
+
+}
+
 .photoborder img {
     filter: drop-shadow(-1px 1px 3px black);
 
@@ -157,7 +166,7 @@ h1 {
     overflow: hidden;
     max-width: 350px;
     margin: 5px;
-    width: 600px;
+    width: 400px;
 
 
 }
