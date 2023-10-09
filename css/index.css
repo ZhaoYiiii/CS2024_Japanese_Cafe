@@ -116,43 +116,51 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-#favRow1{
+
+#favRow1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#favRow2{
+
+#favRow2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#favourites .imageBox{
+
+#favourites .imageBox {
     display: flex;
     flex-direction: column;
-    justify-content:start;
+    justify-content: start;
     padding: 30px;
 }
-#favourites .imageBox img{
+
+#favourites .imageBox img {
     height: 300px;
     width: 300px;
     margin-bottom: 20px;
     border-radius: 15px;
     border: 5px solid #4762dc;
     filter: drop-shadow(-6px 5px 0px #1d38b0);
-    
+
 }
-#favourites .imageBox img:hover{
+
+#favourites .imageBox img:hover {
     border: 5px solid #ffef9f;
     filter: drop-shadow(-6px 5px 0px #f3db66);
+    transition-duration: 0.3s;
 }
-#favourites .imageBox span{
+
+#favourites .imageBox span {
     color: #1e2e84;
     text-align: center;
     font-size: 15px;
     font-family: font_monday_feelings;
     /* filter: drop-shadow(-2px 2px 1px #000000); */
 }
-#favMiddle{
+
+#favMiddle {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,12 +169,14 @@ section {
     margin-bottom: 50px;
     border-top: black 5px solid;
     border-bottom: black 5px solid;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
-#favMiddle img{
+
+#favMiddle img {
     height: 300px;
 }
-#favMiddle span{
+
+#favMiddle span {
     color: #000000;
     text-align: center;
     font-size: 30px;
@@ -176,14 +186,15 @@ section {
     margin-bottom: auto;
 }
 
-#reviews{
+#reviews {
     height: fit-content;
     background-color: rgb(29, 30, 88);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#reviews .title{
+
+#reviews .title {
     color: white;
     text-align: center;
     font-size: 30px;
@@ -191,14 +202,16 @@ section {
     letter-spacing: 18px;
     padding: 70px
 }
-#reviews .middle{
+
+#reviews .middle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: fit-content;
 }
-#reviews .review{
+
+#reviews .review {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -211,7 +224,8 @@ section {
     margin-right: 5px;
     margin-bottom: 10px;
 }
-#reviews .review img{
+
+#reviews .review img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -219,7 +233,8 @@ section {
     margin-bottom: auto;
     padding: 5px;
 }
-#reviews .review span{
+
+#reviews .review span {
     margin-top: auto;
     margin-bottom: auto;
     padding: 5px;
@@ -227,26 +242,29 @@ section {
     font-size: 12px;
 }
 
-#reserveTab span{
+#reserveTab span {
     padding: 15px;
     font-family: font_Autumn_Flowers;
     font-size: 30px;
 }
-#reserveTab img{
+
+#reserveTab img {
     height: 55px;
     padding-right: 15px;
 }
-#reserveTab{
+
+#reserveTab {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(#bf953f,#fcf6ba,#b38728);
+    background: linear-gradient(#bf953f, #fcf6ba, #b38728);
     width: fit-content;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     filter: drop-shadow(0px -3px 7px #000000);
     height: 60px;
 }
-#reserve{
+
+#reserve {
     position: fixed;
     bottom: -350px;
     right: 5px;
@@ -255,14 +273,16 @@ section {
     align-items: end;
     filter: drop-shadow(0px 0px 11px #000000);
 }
-#reserve:hover{
-    transform: translate(0px,-350px);
+
+#reserve:hover {
+    transform: translate(0px, -350px);
     transition-duration: 0.3s;
 }
-#reserveForm{
+
+#reserveForm {
     height: 350px;
     width: 300px;
-    background: linear-gradient(#b38728,#fcf6ba);
+    background: linear-gradient(#b38728, #fcf6ba);
     border-top-left-radius: 10px;
     /* filter: drop-shadow(0px 0px 11px #000000); */
     padding: 25px;
@@ -270,26 +290,33 @@ section {
     font-family: font_monday_feelings;
     font-size: 12px;
 }
-#reserveForm .submitBtn{
+
+#reserveForm .submitBtn {
     font-family: font_Autumn_Flowers;
     background: none;
     border: none;
     font-size: 35px;
 }
-.submitBtn:hover{
+
+.submitBtn:hover {
     color: #ffffffff;
     filter: drop-shadow(0px 0px 7px #ffffffff);
+    transition-duration: 0.3s;
+
 }
-#reserveForm div{
+
+#reserveForm div {
     height: 50px;
     align-items: center;
 }
-#reserveTab:hover{
+
+#reserveTab:hover {
     filter: drop-shadow(0px -3px 7px #ffffffff);
     color: #ffffffff;
+    transition-duration: 0.3s;
 }
 
-footer{
+footer {
     height: fit-content;
     background-color: #6678c2;
     color: white;
@@ -297,28 +324,36 @@ footer{
     flex-direction: column;
     /* background: linear-gradient(180deg, #6678c2 3%, rgba(63,68,171,1) 44%, rgba(21,22,43,1) 100%); */
 }
-footer div{
+
+footer div {
     text-align: center;
     padding: 10px;
 }
-#footerPages a{
+
+#footerPages a {
     color: white;
 }
-#footerPages a:hover{
+
+#footerPages a:hover {
     color: rgb(29, 30, 88);
+    transition-duration: 0.3s;
 }
-#socials{
+
+#socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#socials img{
+
+#socials img {
     height: 30px;
     width: 30px;
     margin: 5px;
 }
-#socials img:hover{
+
+#socials img:hover {
     filter: drop-shadow(0px 0px 3px rgb(29, 30, 88));
+    transition-duration: 0.3s;
 }
 
 @font-face {

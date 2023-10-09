@@ -38,7 +38,12 @@ body {
 
 }
 
+.aboutussection {
+    background-image: url(../images/blueish_Background.png);
 
+    background-attachment: fixed;
+    min-height: 115vh;
+}
 
 
 .aboutusbody {
@@ -176,12 +181,13 @@ body {
 .caferulescontainer {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #f3db66;
     width: 40vw;
-    height: 55vh;
+    height: 58vh;
     padding-left: 20px;
     padding-top: 30px;
     font-size: 14px;
     font-family: font_monday_feelings;
-
+    padding-left: 35px;
+    padding-right: 35px;
 }
