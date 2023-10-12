@@ -30,6 +30,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 
 .aboutussection {
@@ -44,11 +45,15 @@ body {
   background-image: url(../images/a207dd_3aa0fa903e8546fa869d0b89f25a6de7~mv2.gif);
   background-size: cover;
   background-position: top;
+  
   height: 60vh;
   filter: contrast(110%);
   opacity: 0.6;
   position: relative;
   z-index: -1;
+  background: 
+  
+/*  filter: brightness(10%);*/
 }
 
 .aboutustext {
@@ -154,6 +159,10 @@ body {
   z-index: 2;
   opacity: 0.9;
 }
+.caferules img{
+  height:20px;
+  width:20px;
+}
 
 .caferulescontainer {
   display: flex;
@@ -168,3 +177,4 @@ body {
   padding-left: 35px;
   padding-right: 35px;
 }
+

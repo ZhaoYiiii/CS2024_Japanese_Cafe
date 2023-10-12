@@ -50,6 +50,9 @@ body {
 .container-wrapper {
   overflow-x: scroll;
 }
+.container-wrapper::-webkit-scrollbar {
+  display: none;
+}
 
 .eventbody p,
 h1 {
