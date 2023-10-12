@@ -1,115 +1,94 @@
 body {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
 #navBar {
-    width: 100%;
-    height: 7vh;
-    /* background-color: #948fb3; */
-    /* background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902621.jpg); */
-    background-color: transparent;
-    background-size: cover;
-    padding-top: 30px;
-    padding-bottom: 0px;
-    /* filter: drop-shadow(-1px 1px 0px #000000); */
-
-
-
-
+  width: 100%;
+  height: 7vh;
+  /* background-color: #948fb3; */
+  /* background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902621.jpg); */
+  background-color: transparent;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  /* filter: drop-shadow(-1px 1px 0px #000000); */
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
 
 #logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-
-
-
 #logo img {
-    height: 150px;
-    align-items: center;
-
-
+  height: 150px;
+  align-items: center;
 }
 
 #centerButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 0;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0;
+  padding: 10px;
 }
 
 .navBtn {
-    color: #7788c9;
-    font-size: 13px;
-    font-family: font_monday_feelings;
-    border: 1px solid #7788c9;
-    border-radius: 20px;
-    /* background-color: #b8b3fb; */
-    /* background-color: #000000; */
-    /* background-color: #6a81d2; */
-    background-color: white;
-    padding: 13px;
-    padding-left: 10px;
-    padding-right: 10px;
+  color: #7788c9;
+  font-size: 13px;
+  font-family: font_monday_feelings;
+  border: 1px solid #7788c9;
+  border-radius: 20px;
+  /* background-color: #b8b3fb; */
+  /* background-color: #000000; */
+  /* background-color: #6a81d2; */
+  background-color: white;
+  padding: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 
+  width: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    width: 100px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    filter: drop-shadow(-3px 5px 0px #6678c2);
-    transition-duration: 0.3s;
-
-
+  filter: drop-shadow(-3px 5px 0px #6678c2);
+  transition-duration: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .navBtn:hover {
-    filter: drop-shadow(-0px 0px 0px #6678c2);
-    transform: translate(-3px, 3px);
-    background-color: #b8b3fb;
-    color: white;
-    transition-duration: 0.3s;
+  filter: drop-shadow(-0px 0px 0px #6678c2);
+  transform: translate(-3px, 3px);
+  background-color: #b8b3fb;
+  color: white;
+  transition-duration: 0.3s;
 
-    /* transition: white 0.25s; */
-
-
+  /* transition: white 0.25s; */
 }
-
-
 
 /* 
 
@@ -160,71 +139,100 @@ a:active {
 }
  */
 
-
-
-
-@font-face {
-    font-family: font_monday_feelings;
-    src: url(../fonts/MondayFeelings-7BD2l.ttf);
-}
-
-
-
-
 .gifshow {
-    background-image: url(../images/a207dd_b2df2913ba374ac3a57288dd49ea7809~mv2.gif);
-    background-size: cover;
-    height: 100vh;
-    filter: contrast(110%);
-    opacity: 0.6;
-    position: relative;
-    z-index: -2;
-    margin-bottom: -10px;
-    ;
-
-
+  background-image: url(../images/a207dd_b2df2913ba374ac3a57288dd49ea7809~mv2.gif);
+  background-size: cover;
+  height: 100vh;
+  filter: contrast(110%);
+  opacity: 0.6;
+  position: relative;
+  z-index: -2;
+  margin-bottom: -10px;
 }
 
 .gifindexlogocontainer {
-    width: 100%;
-    /* height: 100vh; */
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    /* margin-top: -550px; */
-    top: 27vh;
-    left: 0vw;
+  width: 100%;
+  /* height: 100vh; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: -550px; */
+  top: 27vh;
+  left: 0vw;
 
-
-
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .gifindexlogo {
-    opacity: 1 !important;
-    width: 400px;
+  opacity: 1 !important;
+  width: 400px;
 
-    align-content: center;
-    /* margin-left: 940px;
+  align-content: center;
+  /* margin-left: 940px;
     margin-top: 560px; */
-    margin-left: auto;
-    margin-right: auto;
-    filter: brightness(110%);
-    z-index: 2;
-
-
-
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(110%);
+  z-index: 2;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  height: fit-content;
+  background-color: #6678c2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(180deg, #6678c2 3%, rgba(63,68,171,1) 44%, rgba(21,22,43,1) 100%); */
+}
+
+footer div {
+  text-align: center;
+  padding: 10px;
+}
+
+#footerPages a {
+  color: white;
+}
+
+#footerPages a:hover {
+  color: rgb(29, 30, 88);
+  transition-duration: 0.3s;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#socials img {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+
+#socials img:hover {
+  filter: drop-shadow(0px 0px 3px rgb(29, 30, 88));
+  transition-duration: 0.3s;
+}
+
+@font-face {
+  font-family: font_Autumn_Flowers;
+  src: url(../fonts/AutumnFlowers-9YVZK.otf);
+}
+@font-face {
+  font-family: font_monday_feelings;
+  src: url(../fonts/MondayFeelings-7BD2l.ttf);
 }

@@ -18,17 +18,19 @@
   <div class="gifindexlogocontainer">
     <img src=" ./images/coffee (3).png" class="gifindexlogo" />
     <div id="navBar">
-      <!-- <div id="logo"><img src="images/catlogo.png"></div> -->
       <div id="centerButtons">
-         <a href="#favourites">
-            <div class="navBtn">MENU</div>
-          </a> 
         <a href="events.html">
           <div class="navBtn">EVENTS</div>
         </a>
+        <a href="">
+            <div class="navBtn">MENU</div>
+          </a>
         <a href="aboutus.html">
           <div class="navBtn">ABOUT US</div>
         </a>
+        <a href="">
+            <div class="navBtn">BLOG</div>
+          </a>
       </div>
     </div>
   </div>
@@ -54,7 +56,7 @@
     </p>
     <div id="centerButtons">
       <a href="#">
-        <div class="navBtn">BOOK NOW</div>
+        <div class="navBtn">EVENTS</div>
       </a>
     </div>
   </div>
@@ -96,6 +98,11 @@
         <img src="images/icecream.jpeg">
         <span>Berry Sweet parfait</span>
       </div>
+    </div>
+    <div class="menuBtn">
+        <a href="#">
+            <div class="navBtn">FULL MENU</div>
+          </a>
     </div>
   </div>
 
@@ -141,10 +148,23 @@
     </div>
     <div id="reserveForm">
       <form action="#">
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Select Type</option>
+              <option value="1">Non-Event - Cafe</option>
+              <option value="2">Event - ♪Maid Melody Extravaganza</option>
+              <option value="3">Event - Maid Vs Guests</option>
+            </select>
+            <label for="floatingSelect">Reservation Type</label>
+        </div>
         <div class="form-floating mb-3">
           <input type="date" class="form-control" id="floatingInput" placeholder="" required />
           <label for="floatingInput">Date</label>
         </div>
+        <div class="form-floating mb-3">
+            <input type="time" class="form-control" id="floatingInput" placeholder="" required />
+            <label for="floatingInput">Time</label>
+          </div>
         <div class="form-floating mb-3">
           <input type="number" class="form-control" id="floatingInput" min="1" placeholder="" required />
           <label for="floatingInput">No. of guests</label>

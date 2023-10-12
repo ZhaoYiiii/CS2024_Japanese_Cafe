@@ -186,6 +186,10 @@ section {
     margin-bottom: auto;
 }
 
+#favourites .menuBtn {
+    align-self: center;
+}
+
 #reviews {
     height: fit-content;
     background-color: rgb(29, 30, 88);
@@ -266,7 +270,7 @@ section {
 
 #reserve {
     position: fixed;
-    bottom: -350px;
+    bottom: -500px;
     right: 5px;
     display: flex;
     flex-direction: column;
@@ -275,20 +279,22 @@ section {
 }
 
 #reserve:hover {
-    transform: translate(0px, -350px);
+    transform: translate(0px, -500px);
     transition-duration: 0.3s;
 }
 
 #reserveForm {
-    height: 350px;
+    height: 500px;
     width: 300px;
-    background: linear-gradient(#b38728, #fcf6ba);
+    background: linear-gradient(#b38728, #fcf6ba, #bf953f);
     border-top-left-radius: 10px;
-    /* filter: drop-shadow(0px 0px 11px #000000); */
     padding: 25px;
     align-items: center;
-    font-family: font_monday_feelings;
     font-size: 12px;
+}
+
+#reserveForm .form-floating {
+    margin-bottom: 16px;
 }
 
 #reserveForm .submitBtn {
@@ -296,13 +302,14 @@ section {
     background: none;
     border: none;
     font-size: 35px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .submitBtn:hover {
     color: #ffffffff;
     filter: drop-shadow(0px 0px 7px #ffffffff);
     transition-duration: 0.3s;
-
 }
 
 #reserveForm div {
@@ -314,54 +321,4 @@ section {
     filter: drop-shadow(0px -3px 7px #ffffffff);
     color: #ffffffff;
     transition-duration: 0.3s;
-}
-
-footer {
-    height: fit-content;
-    background-color: #6678c2;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    /* background: linear-gradient(180deg, #6678c2 3%, rgba(63,68,171,1) 44%, rgba(21,22,43,1) 100%); */
-}
-footer iframe{
-    height:150px;
-    width:400px;
-    margin:auto;
-    
-}
-footer div {
-    text-align: center;
-    padding: 10px;
-}
-
-#footerPages a {
-    color: white;
-}
-
-#footerPages a:hover {
-    color: rgb(29, 30, 88);
-    transition-duration: 0.3s;
-}
-
-#socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#socials img {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-}
-
-#socials img:hover {
-    filter: drop-shadow(0px 0px 3px rgb(29, 30, 88));
-    transition-duration: 0.3s;
-}
-
-@font-face {
-    font-family: font_Autumn_Flowers;
-    src: url(../fonts/AutumnFlowers-9YVZK.otf);
 }
