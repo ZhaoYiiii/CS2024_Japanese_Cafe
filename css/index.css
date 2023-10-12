@@ -324,7 +324,12 @@ footer {
     flex-direction: column;
     /* background: linear-gradient(180deg, #6678c2 3%, rgba(63,68,171,1) 44%, rgba(21,22,43,1) 100%); */
 }
-
+footer iframe{
+    height:150px;
+    width:400px;
+    margin:auto;
+    
+}
 footer div {
     text-align: center;
     padding: 10px;
