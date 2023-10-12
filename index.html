@@ -12,8 +12,90 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </head>
+<!-- <script>
+  /*---------------------------------------*/
+  /*	NAVIGATION AND NAVIGATION VISIBLE ON SCROLL
+  /*---------------------------------------*/
+  $(window).on("load", function () {
+    mainNav();
+    $(window).scroll(function () {
+      mainNav();
+    });
+    function mainNav() {
+      var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (top > 40) $('indexbanner').stop().animate({
+
+        "opacity": '1',
+        "top": '0'
+      });
+      else $('#indexbanner').stop().animate({
+        "top": '-70',
+        "opacity": '0'
+      });
+
+    }
+  });
+</script> -->
+<script>
+  const navbar = document.getElementById("indexbanner");
+
+  let lastScrollTop = 0;
+  addEventListener("scroll", () => {
+    // Current scroll position
+    const scrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    // check scroll direction
+    const distance = scrollTop - lastScrollTop;
+    const currentTop = parseInt(
+      getComputedStyle(navbar).top.split("px")
+    );
+
+    // Clamp value between -80 and 0
+    let amount = Math.max(
+      Math.min(
+        currentTop +
+        (distance < 0
+          ? Math.abs(distance) // scrolling up
+          : -Math.abs(distance)// scrolling down
+        ) * 40, // (1)
+        0
+      ),
+      -80
+    );
+
+    console.log(amount, currentTop, Math.abs(distance));
+
+    navbar.style.top = `${amount}px`;
+
+    lastScrollTop = scrollTop;
+  });
+</script>
 
 <body>
+
+
+  <!-- <div id="indexbanner">
+    <div id=" indexnavBar">
+      <div id="indexlogo"><img src="images/catlogo.png" alt="sunaku" title="sunaku"></div>
+      <div id="indexcenterButtons">
+        <a href="index.html">
+          <div class="navBtn">HOME</div>
+        </a>
+        <a href="events.html">
+          <div class="navBtn">EVENTS</div>
+        </a>
+        <a href="aboutus.html">
+          <div class="navBtn">ABOUT US</div>
+        </a>
+        </a>
+      </div>
+
+    </div>
+  </div> -->
+
+
+
   <div class="gifshow"></div>
   <div class="gifindexlogocontainer">
     <img src=" ./images/coffee (3).png" class="gifindexlogo" />
@@ -23,14 +105,14 @@
           <div class="navBtn">EVENTS</div>
         </a>
         <a href="">
-            <div class="navBtn">MENU</div>
-          </a>
+          <div class="navBtn">MENU</div>
+        </a>
         <a href="aboutus.html">
           <div class="navBtn">ABOUT US</div>
         </a>
         <a href="">
-            <div class="navBtn">BLOG</div>
-          </a>
+          <div class="navBtn">BLOG</div>
+        </a>
       </div>
     </div>
   </div>
@@ -100,9 +182,9 @@
       </div>
     </div>
     <div class="menuBtn">
-        <a href="#">
-            <div class="navBtn">FULL MENU</div>
-          </a>
+      <a href="#">
+        <div class="navBtn">FULL MENU</div>
+      </a>
     </div>
   </div>
 
@@ -149,22 +231,22 @@
     <div id="reserveForm">
       <form action="#">
         <div class="form-floating">
-            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>Select Type</option>
-              <option value="1">Non-Event - Cafe</option>
-              <option value="2">Event - ♪Maid Melody Extravaganza</option>
-              <option value="3">Event - Maid Vs Guests</option>
-            </select>
-            <label for="floatingSelect">Reservation Type</label>
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Select Type</option>
+            <option value="1">Non-Event - Cafe</option>
+            <option value="2">Event - ♪Maid Melody Extravaganza</option>
+            <option value="3">Event - Maid Vs Guests</option>
+          </select>
+          <label for="floatingSelect">Reservation Type</label>
         </div>
         <div class="form-floating mb-3">
           <input type="date" class="form-control" id="floatingInput" placeholder="" required />
           <label for="floatingInput">Date</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="time" class="form-control" id="floatingInput" placeholder="" required />
-            <label for="floatingInput">Time</label>
-          </div>
+          <input type="time" class="form-control" id="floatingInput" placeholder="" required />
+          <label for="floatingInput">Time</label>
+        </div>
         <div class="form-floating mb-3">
           <input type="number" class="form-control" id="floatingInput" min="1" placeholder="" required />
           <label for="floatingInput">No. of guests</label>
@@ -191,7 +273,10 @@
   <div>
     <span>190 Middle road fortune centre <br /> #03-01 Level 3 <br />Singapore 188979</span>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3952200727645!2d103.85086649878868!3d1.3005936942271248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19998c530cff%3A0x300217c977df6ad5!2sIzakaya%20Hikari!5e0!3m2!1sen!2ssg!4v1697098305214!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3952200727645!2d103.85086649878868!3d1.3005936942271248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19998c530cff%3A0x300217c977df6ad5!2sIzakaya%20Hikari!5e0!3m2!1sen!2ssg!4v1697098305214!5m2!1sen!2ssg"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
   <div id="socials">
     <img src="images/insta.png">
     <img src="images/threads.png">
